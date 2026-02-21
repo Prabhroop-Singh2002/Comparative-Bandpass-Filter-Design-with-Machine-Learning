@@ -180,3 +180,18 @@ For tree-based models:
 - Feature importance scores were extracted
 - Relative contribution of $L_1, L_2, L_3, L_4$ to predicted $f_0$ was analyzed
 
+
+# Key Findings
+
+📄 For detailed results, see the [Full Results Report](./report/Project%20Report.pdf).
+
+## HFSS-Based Surrogate Models
+
+- **Dataset size is critical.** With only 10 samples, all models yielded negative test $R^2$. Performance improved steadily from 150 → 500 → 1000 samples, with positive $R^2$ achieved only at larger sizes.
+- **Tree-ensemble methods dominate.** Random Forest achieved the best single-dataset performance (1000 samples, $R^2 = 0.5237$); Extra Trees led on the joint 500+1000 dataset ($R^2 = 0.5602$), both with the lowest RMSE in their respective cases.
+- **Joint dataset helps, but unevenly.** Combining the 500 and 1000-sample sets boosted most models, particularly ensemble learners, though gains were not uniform across all model classes.
+- **Feature importance highlights key geometric drivers.** Random Forest analysis (1000 samples) identifies $L_3$ and $L_4$ as the most influential inputs for predicting $f_0$, with $L_1$ and $L_2$ having comparatively smaller impact.
+
+> ⚠️ HFSS models appear data-limited — best test $R^2$ reaches only ~0.50–0.56, suggesting more samples and broader design-space coverage are needed for stronger generalization.
+
+---
