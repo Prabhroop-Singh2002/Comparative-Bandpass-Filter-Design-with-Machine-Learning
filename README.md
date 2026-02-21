@@ -192,6 +192,6 @@ For tree-based models:
 - **Joint dataset helps, but unevenly.** Combining the 500 and 1000-sample sets boosted most models, particularly ensemble learners, though gains were not uniform across all model classes.
 - **Feature importance highlights key geometric drivers.** Random Forest analysis (1000 samples) identifies $L_3$ and $L_4$ as the most influential inputs for predicting $f_0$, with $L_1$ and $L_2$ having comparatively smaller impact.
 
-> ⚠️ HFSS models appear data-limited — best test $R^2$ reaches only ~0.50–0.56, suggesting more samples and broader design-space coverage are needed for stronger generalization.
+> HFSS models appear data-limited — best test $R^2$ reaches only ~0.50–0.56, suggesting more samples and broader design-space coverage are needed for stronger generalization.
 
 ---
