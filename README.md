@@ -1,4 +1,4 @@
-# 🚀 HFSS-Based Bandpass Filter Design with Machine Learning Surrogate Modeling
+# HFSS-Based Bandpass Filter Design with Machine Learning Surrogate Modeling
 
 > Automated EM simulation and ML-driven surrogate modeling for accelerated microwave bandpass filter design.
 
@@ -101,8 +101,82 @@ For each sampled geometry:
 
 # 🤖 Machine Learning Pipeline
 
-## Problem Formulation
+![Overall Process](assets/pipeline.png)
 
-**Regression Task**
+# Regression Model Evaluation
 
-Input:
+The following regression models were evaluated for predicting filter performance:
+
+## Linear Models
+
+- Linear Regression
+- Ridge Regression
+- Lasso Regression
+- ElasticNet Regression
+- Bayesian Ridge Regression
+- Huber Regressor
+- Polynomial Regression (Degree = 3)
+
+## Distance-Based Models
+
+- k-Nearest Neighbors (k = 7)
+
+## Tree-Based Models
+
+- Decision Tree Regressor
+- Random Forest Regressor
+- Extra Trees Regressor
+- Gradient Boosting Regressor
+- AdaBoost Regressor
+
+## Kernel-Based Models
+
+- Support Vector Regression (RBF Kernel)
+- Gaussian Process Regressor (Constant × RBF Kernel)
+
+## Neural Network
+
+- Multi-Layer Perceptron (MLP) Regressor
+
+---
+
+## ⚙ Feature Scaling
+
+For models sensitive to feature magnitude:
+
+- Standardization applied using `StandardScaler`
+- Integrated within a Scikit-learn `Pipeline` for clean preprocessing
+
+---
+
+## 📊 Evaluation Metrics
+
+Models were evaluated on the held-out test set using:
+
+- $R^2$ Score
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+
+Model comparison included:
+
+- Metric comparison tables
+- $R^2$ bar plots
+
+---
+
+## 🔎 Diagnostic Analysis
+
+The best-performing model (based on test $R^2$) was further analyzed using:
+
+- True vs Predicted scatter plots
+- Sorted true vs predicted curves
+- Residual histograms
+- Residual vs predicted value plots
+- Absolute error boxplots (Top 5 models)
+
+For tree-based models:
+
+- Feature importance scores were extracted
+- Relative contribution of $L_1, L_2, L_3, L_4$ to predicted $f_0$ was analyzed
+
