@@ -10,7 +10,7 @@
 
 ## 📌 Project Context
 
-This repository contains **my individual contribution** to the group project:
+This repository contains **my individual contribution (HFSS part)** to the group project:
 
 **"Comparative Bandpass Filter Design in HFSS and CST with Machine Learning"**
 
@@ -36,6 +36,9 @@ This project integrates:
 - **Machine Learning Regression Models**
 
 to build a **surrogate model** capable of predicting filter performance without repeatedly running full-wave simulations.
+
+
+![EF visualization](assets/1.png)
 
 ---
 
