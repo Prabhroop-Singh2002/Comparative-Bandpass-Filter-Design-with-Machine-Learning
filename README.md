@@ -183,7 +183,7 @@ For tree-based models:
 
 # Key Findings
 
-📄 For detailed results, see the [Full Results Report](./report/Project%20Report.pdf).
+📄 For detailed results, see the [Full Results Report](./Report/Project%20Report.pdf).
 
 ## HFSS-Based Surrogate Models
 
