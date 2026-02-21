@@ -23,6 +23,8 @@ This repo focuses exclusively on:
 
 The CST workflow and comparative analysis are part of the full group submission.
 
+![visual](assets/visual.gif)
+
 ---
 
 # 🏗 Overview
