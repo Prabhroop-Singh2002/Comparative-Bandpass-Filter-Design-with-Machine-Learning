@@ -48,6 +48,8 @@ to build a **surrogate model** capable of predicting filter performance without 
 
 ## 1️⃣ HFSS Filter Design
 
+![Filter Diagram](assets/filter_design.png)
+
 - Parallel-coupled microstrip resonator topology
 - PEC resonator strips
 - Two-port excitation
@@ -56,12 +58,7 @@ to build a **surrogate model** capable of predicting filter performance without 
 
 ### Parameterized Variables
 
-The following geometric parameters are varied:
-
-- L1
-- L2
-- L3
-- L4
+The following geometric parameters are varied: L1, L2, L3, L4
 
 These directly influence the filter’s center frequency and coupling behavior.
 
